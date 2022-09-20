@@ -1,0 +1,77 @@
+.navbar{
+    max-width: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+// logo
+.navbar__logo--link{
+    text-decoration: none;
+}
+
+.navbar__logo--text{
+    font-family: 'Rammetto One', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 18px;
+    color: #5b96d1;
+}
+.navbar__logo--text:hover{
+    cursor: pointer;
+}
+
+// mobile hamburger button
+.navbar__hamburger{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navbar__hamburger:hover{
+    cursor: pointer;
+}
+.hamburger__bar{
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #476c92;
+}
+
+// menu navigation
+.navbar__menu{
+    font-family: 'Alata', sans-serif; 
+    font-size: 20px;
+    border: 1px solid rgb(96, 146, 197);
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 160px;
+    height: 300px;
+    padding: 50px 30px;
+    display: none;
+}
+
+.navbar__menu.active{
+    display: block;
+}
+
+// menu inner
+.menu__category--list{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.menu__category--link{
+    text-decoration: none;
+    color: #455361;
+}
+
+.menu__category--link:hover{
+    cursor: pointer;
+    color: #7ca6cd;
+}
